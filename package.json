@@ -1,31 +1,42 @@
 {
-	"name": "hue-api",
-	"version": "1.0.0",
-	"description": "",
-	"main": "index.js",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/quentintruffy/hue-api.git"
-	},
-	"keywords": [],
-	"author": "quentintruffy",
-	"license": "ISC",
-	"type": "commonjs",
-	"bugs": {
-		"url": "https://github.com/quentintruffy/hue-api/issues"
-	},
-	"homepage": "https://github.com/quentintruffy/hue-api#readme",
-	"dependencies": {
-		"@types/node": "^25.0.5",
-		"ts-node": "^10.9.2",
-		"typescript": "^5.9.3"
-	},
-	"devDependencies": {
-		"prettier": "3.7.4",
-		"tsup": "^8.5.1",
-		"tsx": "^4.21.0"
-	}
+  "name": "hue-api",
+  "version": "0.1.0",
+  "description": "Pure Philips Hue API library for Node.js and TypeScript",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "format": "prettier --write .",
+    "build": "tsup",
+    "test": "NODE_TLS_REJECT_UNAUTHORIZED=0 tsx src/test.ts",
+    "start:test": "node dist/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quentintruffy/hue-api.git"
+  },
+  "author": "quentintruffy",
+  "keywords": [
+    "hue",
+    "philips",
+    "api",
+    "typescript",
+    "nodejs"
+  ],
+  "license": "MIT",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/quentintruffy/hue-api/issues"
+  },
+  "homepage": "https://github.com/quentintruffy/hue-api#readme",
+  "dependencies": {
+    "@types/node": "^25.0.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "devDependencies": {
+    "prettier": "3.7.4",
+    "tsup": "^8.5.1",
+    "tsx": "^4.21.0"
+  }
 }
