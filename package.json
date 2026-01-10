@@ -8,8 +8,8 @@
   "scripts": {
     "format": "prettier --write .",
     "build": "tsup",
-    "test": "NODE_TLS_REJECT_UNAUTHORIZED=0 tsx src/test.ts",
-    "start:test": "node dist/test.js"
+    "test": "NODE_TLS_REJECT_UNAUTHORIZED=0 tsx src/index.test.ts",
+    "start:test": "node dist/index.js"
   },
   "repository": {
     "type": "git",
