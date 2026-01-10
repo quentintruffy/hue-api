@@ -17,5 +17,15 @@
 	"bugs": {
 		"url": "https://github.com/quentintruffy/hue-api/issues"
 	},
-	"homepage": "https://github.com/quentintruffy/hue-api#readme"
+	"homepage": "https://github.com/quentintruffy/hue-api#readme",
+	"dependencies": {
+		"@types/node": "^25.0.5",
+		"ts-node": "^10.9.2",
+		"typescript": "^5.9.3"
+	},
+	"devDependencies": {
+		"prettier": "3.7.4",
+		"tsup": "^8.5.1",
+		"tsx": "^4.21.0"
+	}
 }
